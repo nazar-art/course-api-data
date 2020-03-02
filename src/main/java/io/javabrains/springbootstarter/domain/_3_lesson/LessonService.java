@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.domain.lesson;
+package io.javabrains.springbootstarter.domain._3_lesson;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,14 +10,10 @@ import java.util.List;
 @AllArgsConstructor
 public class LessonService {
 
-//    @Autowired
     private LessonRepository lessonRepository;
 
     public List<Lesson> getAllLessons(String courseId) {
-        ArrayList<Lesson> lessons = new ArrayList<>();
-        lessonRepository.findByCourseId(courseId)
-                .forEach(lessons::add);
-        return lessons;
+        return lessonRepository.findByCourseId(courseId);
     }
 
     public Lesson getLesson(String id) {

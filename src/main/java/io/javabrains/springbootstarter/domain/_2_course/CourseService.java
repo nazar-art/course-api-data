@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.domain.course;
+package io.javabrains.springbootstarter.domain._2_course;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,14 +10,10 @@ import java.util.List;
 @AllArgsConstructor
 public class CourseService {
 
-//    @Autowired
     private CourseRepository courseRepository;
 
     public List<Course> getAllCourses(String topicId) {
-        ArrayList<Course> courses = new ArrayList<>();
-        courseRepository.findByTopicId(topicId)
-                .forEach(courses::add);
-        return courses;
+        return courseRepository.findByTopicId(topicId);
     }
 
     public Course getCourse(String id) {

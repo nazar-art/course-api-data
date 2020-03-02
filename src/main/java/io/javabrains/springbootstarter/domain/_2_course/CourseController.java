@@ -1,6 +1,6 @@
-package io.javabrains.springbootstarter.domain.course;
+package io.javabrains.springbootstarter.domain._2_course;
 
-import io.javabrains.springbootstarter.domain.topic.Topic;
+import io.javabrains.springbootstarter.domain._1_topic.Topic;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,10 +17,12 @@ public class CourseController {
         return courseService.getAllCourses(id);
     }
 
+
     @RequestMapping(value = "/topics/{topicId}/courses/{id}", method = RequestMethod.GET)
     public Course getCourse(@PathVariable String id) {
         return courseService.getCourse(id);
     }
+
 
     @RequestMapping(value = "/topics/{topicId}/courses", method = RequestMethod.POST)
     public void addCourse(@PathVariable String topicId, @RequestBody Course course) {
@@ -28,11 +30,13 @@ public class CourseController {
         courseService.addCourse(course);
     }
 
+
     @RequestMapping(value = "/topics/{topicId}/courses/{id}", method = RequestMethod.PUT)
     public void updateCourse(@RequestBody Course course, @PathVariable String topicId, @PathVariable String id) {
         course.setTopic(new Topic(topicId, "", ""));
         courseService.updateCourse(course);
     }
+
 
     @RequestMapping(value = "/topics/{topicId}/courses/{id}", method = RequestMethod.DELETE)
     public void deleteCourse(@PathVariable String id) {

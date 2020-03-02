@@ -1,6 +1,6 @@
-package io.javabrains.springbootstarter.domain.lesson;
+package io.javabrains.springbootstarter.domain._3_lesson;
 
-import io.javabrains.springbootstarter.domain.course.Course;
+import io.javabrains.springbootstarter.domain._2_course.Course;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

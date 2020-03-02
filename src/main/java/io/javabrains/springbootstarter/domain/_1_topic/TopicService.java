@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.domain.topic;
+package io.javabrains.springbootstarter.domain._1_topic;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,6 @@ import java.util.List;
 @AllArgsConstructor
 public class TopicService {
 
-//    @Autowired
     private TopicRepository topicRepository;
 
     /*private List<Topic> topics = new ArrayList<>(Arrays.asList(new Topic("spring", "Spring Framework", "Spring Framework Description"),
@@ -19,8 +18,7 @@ public class TopicService {
 
     public List<Topic> getAllTopics() {
         ArrayList<Topic> topics = new ArrayList<>();
-        topicRepository.findAll()
-                .forEach(topics::add);
+        topicRepository.findAll().forEach(topics::add);
         return topics;
     }
 

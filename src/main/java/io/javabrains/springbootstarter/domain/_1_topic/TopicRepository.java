@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.domain.topic;
+package io.javabrains.springbootstarter.domain._1_topic;
 
 import org.springframework.data.repository.CrudRepository;
 

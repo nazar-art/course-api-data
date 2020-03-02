@@ -15,10 +15,10 @@ Also, actuator is available:
     http://localhost:9001/metrics    
     http://localhost:9001/trace    
 
-For accessing Swagger documentation open
+For accessing Swagger documentation open:
 
     http://localhost:8081/v2/api-docs
     
-Swagger UI
+Swagger UI:
 
     http://localhost:8081/swagger-ui.html    

@@ -1,12 +1,12 @@
 package io.javabrains.springbootstarter.init;
 
 import io.javabrains.springbootstarter.constants.Topics;
-import io.javabrains.springbootstarter.domain.course.Course;
-import io.javabrains.springbootstarter.domain.course.CourseService;
-import io.javabrains.springbootstarter.domain.lesson.Lesson;
-import io.javabrains.springbootstarter.domain.lesson.LessonService;
-import io.javabrains.springbootstarter.domain.topic.Topic;
-import io.javabrains.springbootstarter.domain.topic.TopicService;
+import io.javabrains.springbootstarter.domain._2_course.Course;
+import io.javabrains.springbootstarter.domain._2_course.CourseService;
+import io.javabrains.springbootstarter.domain._3_lesson.Lesson;
+import io.javabrains.springbootstarter.domain._3_lesson.LessonService;
+import io.javabrains.springbootstarter.domain._1_topic.Topic;
+import io.javabrains.springbootstarter.domain._1_topic.TopicService;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

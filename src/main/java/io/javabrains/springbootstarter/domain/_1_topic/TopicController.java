@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.domain.topic;
+package io.javabrains.springbootstarter.domain._1_topic;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -18,6 +18,7 @@ import java.util.List;
 public class TopicController {
 
     private TopicService topicService;
+
 
     @ApiOperation(value = "Find All Topics",
             responseContainer = "List",

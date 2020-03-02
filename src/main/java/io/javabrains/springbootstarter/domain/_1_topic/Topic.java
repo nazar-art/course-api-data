@@ -1,4 +1,4 @@
-package io.javabrains.springbootstarter.domain.topic;
+package io.javabrains.springbootstarter.domain._1_topic;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
