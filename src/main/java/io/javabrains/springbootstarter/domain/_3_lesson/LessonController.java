@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 public class LessonController {
 
-    private LessonService lessonService;
+    private final LessonService lessonService;
 
     @RequestMapping(value = "/topics/{topicId}/courses/{id}/lessons", method = RequestMethod.GET)
     public List<Lesson> getAllLessons(@PathVariable String id) {

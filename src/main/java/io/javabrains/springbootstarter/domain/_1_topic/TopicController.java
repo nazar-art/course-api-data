@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 public class TopicController {
 
-    private TopicService topicService;
+    private final TopicService topicService;
 
 
     @ApiOperation(value = "Find All Topics",

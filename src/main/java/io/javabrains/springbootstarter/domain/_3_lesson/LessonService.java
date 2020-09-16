@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 public class LessonService {
 
-    private LessonRepository lessonRepository;
+    private final LessonRepository lessonRepository;
 
     public List<Lesson> getAllLessons(String courseId) {
         return lessonRepository.findByCourseId(courseId);

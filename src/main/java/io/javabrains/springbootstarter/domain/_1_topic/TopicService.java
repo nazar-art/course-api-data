@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 public class TopicService {
 
-    private TopicRepository topicRepository;
+    private final TopicRepository topicRepository;
 
     /*private List<Topic> topics = new ArrayList<>(Arrays.asList(new Topic("spring", "Spring Framework", "Spring Framework Description"),
             new Topic("java", "Core Java", "Core Java Description"),

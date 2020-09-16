@@ -11,10 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Data
+@Entity
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 public class Lesson {
 
 	@Id
